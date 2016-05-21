@@ -3,4 +3,5 @@
 
 'use strict'
 
+# String -> Any
 module.exports = -> eval it

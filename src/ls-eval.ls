@@ -10,6 +10,7 @@ require! {
 }
 
 module.exports = (output-channel) ->
+  print-out = print output-channel
   get-selection!
-  |> evaluate
-  |> print output-channel, _
+    .then evaluate
+    .then print-out, (.message |> print-out)

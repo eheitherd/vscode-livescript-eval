@@ -8,7 +8,8 @@ require! {
   'prelude-ls': {is-type}
 }
 
-module.exports = (output-channel, output) ->
+# OutputChannel -> String -> undefined
+module.exports = (output-channel, output) -->
   if is-type \String output
     output-channel
       ..clear!
