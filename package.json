@@ -1,0 +1,82 @@
+{
+  "name": "vscode-livescript-eval",
+  "displayName": "LiveScript eval",
+  "description": "Evaluate selected LiveScript code",
+  "version": "0.0.1",
+  "publisher": "Eheitherd Ceres",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "livescript",
+    "eval",
+    "visual studio code",
+    "vs code",
+    "extension"
+  ],
+  "galleryBanner": {
+    "coloe": "#e8fff7",
+    "theme": "light"
+  },
+  "main": "./lib/extension",
+  "activationEvents": [
+    "onCommand:extension.livescript-eval"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "livescript",
+        "extensions": [
+          ".ls"
+        ],
+        "aliases": [
+          "LiveScript",
+          "ls"
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.livescript-eval",
+        "title": "LiveScript eval"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.livescript-eval",
+        "key": "ctrl+k ctrl+e",
+        "when": "editorTextFocus && editorLangId == 'livescript'"
+      }
+    ]
+  },
+  "dependencies": {
+    "livescript": "^1.5.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-livescript": "^3.0.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "ls-lint": "^0.1.0",
+    "vinyl-paths": "^2.1.0",
+    "vscode": "^0.11.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eheitherd/vscode-livescript-eval.git"
+  },
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "lint": "ls-lint \"./src/**/*.ls\"",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "vscode:prepublish": "gulp build"
+  }
+}
