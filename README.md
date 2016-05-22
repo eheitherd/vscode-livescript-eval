@@ -11,7 +11,7 @@ Evaluate selected LiveScript code.
 
 * Evaluates selected LiveScript code.
 * If evaluation result is a function, re-evaluate it with input arguments.
-* Re-evaluation of functions supports curried functions.
+* Supports re-evaluation of curried functions.
 * Evaluation in the context of Visual Studio Code.
 
 ## Usage
