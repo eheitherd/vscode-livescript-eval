@@ -3,9 +3,11 @@
   "displayName": "LiveScript Eval",
   "description": "Evaluate selected LiveScript code",
   "version": "0.0.1",
-  "publisher": "Eheitherd Ceres",
+  "author": "Eheitherd Ceres",
+  "publisher": "eheitherd",
   "engines": {
-    "vscode": "^1.0.0"
+    "vscode": "^1.0.0",
+    "node": ">= 0.11.13"
   },
   "categories": [
     "Other"
