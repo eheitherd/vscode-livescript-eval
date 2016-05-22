@@ -14,8 +14,10 @@ require! {
 }
 
 src = \src/**/*.ls
+src-test = \test/src/**/*.ls
 dir-lib = \lib
-products = [dir-lib]
+dir-testlib = \test/lib
+products = [dir-lib, dir-testlib]
 
 gulp.task \build ->
   gulp.src src
@@ -25,8 +27,16 @@ gulp.task \build ->
     .pipe paths -> log-act \compile, it, dir-lib, \ls
     .pipe gulp.dest dir-lib
 
-gulp.task \watch <[ build ]> ->
-  gulp.watch src, <[ build ]>
+gulp.task \build-test ->
+  gulp.src src-test
+    .pipe newer dest: dir-testlib, ext: \.js
+    .pipe plumber error-handler: log
+    .pipe lsc!
+    .pipe paths -> log-act \compile, it, dir-testlib, \ls
+    .pipe gulp.dest dir-testlib
+
+gulp.task \watch <[ build build-test ]> ->
+  gulp.watch [src, src-test], <[ build build-test ]>
 
 gulp.task \clean ->
   del products
