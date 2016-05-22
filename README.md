@@ -5,7 +5,14 @@ Evaluate selected LiveScript code.
 [![Build Status][build-img]][build-url]
 [![GitHub license][license-img]][license-url]
 
+![LiveScript Eval Sample](./sample.gif)
+
 ## Features
+
+* Evaluates selected LiveScript code.
+* If evaluation result is a function, re-evaluate it with input arguments.
+* Re-evaluation of functions supports curried function.
+* Evaluation in the context of Visual Studio Code.
 
 ## Usage
 
