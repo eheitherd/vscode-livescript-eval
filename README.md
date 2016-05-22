@@ -13,7 +13,7 @@ Evaluate selected LiveScript code.
 1. Select code which you want to evaluate
 1. Press `Ctrl(Cmd)+K Ctrl(Cmd)+E` or<br>Execute from command palette (See below)
   1. Press `F1` or `Ctrl(Cmd)+Shift+P`
-  1. Type `le`
+  1. Type `lie`
   1. pick `LiveScript Eval`
 
 [dependency-img]: https://gemnasium.com/badges/github.com/eheitherd/vscode-livescript-eval.svg

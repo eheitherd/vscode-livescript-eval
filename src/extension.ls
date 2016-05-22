@@ -9,7 +9,7 @@ require! {
 }
 
 export activate = (context) ->
-  output-channel = window.create-output-channel 'LiveScript eval'
+  output-channel = window.create-output-channel 'LiveScript Eval'
   command-reg = register-command command, -> ls-eval output-channel
   context.subscriptions.push output-channel, command-reg
 

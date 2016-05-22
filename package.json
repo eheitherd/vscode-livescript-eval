@@ -1,6 +1,6 @@
 {
   "name": "vscode-livescript-eval",
-  "displayName": "LiveScript eval",
+  "displayName": "LiveScript Eval",
   "description": "Evaluate selected LiveScript code",
   "version": "0.0.1",
   "publisher": "Eheitherd Ceres",
@@ -41,7 +41,7 @@
     "commands": [
       {
         "command": "extension.livescript-eval",
-        "title": "LiveScript eval"
+        "title": "LiveScript Eval"
       }
     ],
     "keybindings": [
