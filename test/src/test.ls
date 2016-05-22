@@ -5,9 +5,10 @@
 
 require! 'prelude-ls': {each}
 
-<[
-  get-selection.test
-  evaluate.test
-  lint.test
-]>
-|> each -> (require "./#{it}")!
+module.exports = ->
+  <[
+    test-get-selection
+    test-evaluate
+    test-lint
+  ]>
+  |> each -> (require "./#{it}")!
