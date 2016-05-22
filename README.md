@@ -1,2 +1,24 @@
-# vscode-livescript-eval
-Evaluate selected LiveScript code
+# LiveScript Eval
+Evaluate selected LiveScript code.
+
+[![Dependency Status][dependency-img]][dependency-url]
+[![Build Status][build-img]][build-url]
+[![GitHub license][license-img]][license-url]
+
+## Features
+
+## Usage
+
+1. Open or create a LiveScript source file
+1. Select code which you want to evaluate
+1. Press `Ctrl(Cmd)+K Ctrl(Cmd)+E` or<br>Execute from command palette (See below)
+  1. Press `F1` or `Ctrl(Cmd)+Shift+P`
+  1. Type `le`
+  1. pick `LiveScript Eval`
+
+[dependency-img]: https://gemnasium.com/badges/github.com/eheitherd/vscode-livescript-eval.svg
+[dependency-url]: https://gemnasium.com/github.com/eheitherd/vscode-livescript-eval
+[build-img]: https://travis-ci.org/eheitherd/vscode-livescript-eval.svg?branch=master
+[build-url]: https://travis-ci.org/eheitherd/vscode-livescript-eval
+[license-img]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-url]: https://raw.githubusercontent.com/eheitherd/vscode-livescript-eval/master/LICENSE
