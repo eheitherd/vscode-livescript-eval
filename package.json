@@ -2,7 +2,7 @@
   "name": "vscode-livescript-eval",
   "displayName": "LiveScript Eval",
   "description": "Evaluate selected LiveScript code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Eheitherd Ceres",
   "publisher": "eheitherd",
   "engines": {
